@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Etch a sketch project</title>
     <link rel="stylesheet" href="/css/style.css">
+    <script src="/js/App.js" defer></script>
 </head>
 <body>
         <h1>Etch-A-Sketch</h1>
@@ -25,10 +26,10 @@
             <div>
                 <h4>Grid Size</h4>
                 <div class="button_grid">
-                    <button class="btn ">8&times8</button>
-                    <button class="btn">16&times16</button>
-                    <button class="btn">32&times32</button>
-                    <button class="btn">64&times64</button>
+                    <button data-number="8" class="btn ">8&times8</button>
+                    <button data-number="16" class="btn">16&times16</button>
+                    <button data-number="32" class="btn">32&times32</button>
+                    <button data-number="64" class="btn">64&times64</button>
                 </div>
             </div>
             <div>
@@ -37,7 +38,9 @@
         </div>
         <div class="right">
             <div class="frame">
-                <div class="screen"></div>
+                <div id="screen">
+                    <div class="div"></div>
+                </div>
                 <div class="circles">
                     <div class="circle"></div>
                     <div class="circle"></div>
